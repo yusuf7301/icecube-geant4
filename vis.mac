@@ -1,0 +1,19 @@
+# Görselleştirme. Fotonlar çok fazla olduğu için çizimde gizlenir.
+/run/initialize
+/process/inactivate OpMieHG
+/vis/open OGL
+/vis/viewer/set/autoRefresh false
+/vis/drawVolume
+/vis/viewer/set/viewpointThetaPhi 70 20 deg
+/vis/viewer/set/style surface
+/vis/scene/add/trajectories smooth
+/vis/modeling/trajectories/create/drawByParticleID
+/vis/modeling/trajectories/drawByParticleID-0/set mu- red
+/vis/modeling/trajectories/drawByParticleID-0/set e- yellow
+/vis/filtering/trajectories/create/particleFilter
+/vis/filtering/trajectories/particleFilter-0/add opticalphoton
+/vis/filtering/trajectories/particleFilter-0/invert true
+/vis/scene/endOfEventAction accumulate
+/vis/viewer/set/autoRefresh true
+/icecube/energy 100 GeV
+/icecube/prefix data/vis

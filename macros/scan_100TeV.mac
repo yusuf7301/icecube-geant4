@@ -1,0 +1,17 @@
+# Otomatik üretildi (make_macros.sh): E = 100 TeV, 20 olay, buz = rayleigh, string aralığı = 6 m
+/control/verbose 1
+/run/printProgress 20
+/icecube/stringSpacing 6 m
+/run/initialize
+/process/inactivate OpMieHG
+/icecube/particle mu-
+/icecube/energy 100 TeV
+/icecube/sourceRA 77.358 deg
+/icecube/sourceDec 5.693 deg
+/icecube/angularSpread 0.5 deg
+/icecube/offsetRadius 3 m
+/icecube/prefix data/scan/E100TeV
+/icecube/photonSaveEvents 0
+/icecube/saveHitPhotons 0
+/icecube/saveMuonSteps 0
+/run/beamOn 20

@@ -1,0 +1,8 @@
+# Hızlı test: 4 olay
+/run/initialize
+/process/inactivate OpMieHG
+/run/printProgress 1
+/icecube/energy 1 TeV
+/icecube/prefix data/test
+/icecube/photonSaveEvents 1
+/run/beamOn 4

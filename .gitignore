@@ -1,0 +1,20 @@
+# Derleme ve simülasyon çıktıları
+build/
+*.log
+*.csv
+*.root
+
+# Python
+__pycache__/
+*.pyc
+
+# Rapor çıktıları: sadece üretim scriptleri tutulur
+rapor/*
+!rapor/uretim/
+rapor/uretim/*
+!rapor/uretim/*.py
+
+# Editör / sistem
+.vscode/
+*~
+.DS_Store

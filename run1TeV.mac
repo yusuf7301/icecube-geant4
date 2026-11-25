@@ -1,0 +1,19 @@
+# 1 TeV müon, 100 olay. Kaynak: TXS 0506+056 (BL Lac blazarı)
+/control/verbose 1
+/run/verbose 1
+/run/printProgress 10
+/tracking/verbose 0
+
+/run/initialize
+/process/inactivate OpMieHG   # buz modeli: yalnız Rayleigh saçılması
+
+/icecube/particle mu-
+/icecube/energy 1 TeV
+/icecube/sourceRA 77.358 deg
+/icecube/sourceDec 5.693 deg
+/icecube/angularSpread 0.5 deg
+/icecube/offsetRadius 3 m
+/icecube/prefix data/1TeV
+/icecube/photonSaveEvents 1
+
+/run/beamOn 100
